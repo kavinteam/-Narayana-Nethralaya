@@ -1,0 +1,339 @@
+/* .list-doc {
+  margin: 0;
+  padding: 0;
+}
+
+.doc-nn {
+  color: #6ec1e4;
+
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 110px;
+  padding-left: 130px;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 130px;
+  margin-bottom: 20px;
+  padding-top: 170px;
+}
+
+.tab-button {
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background-color: #129485;
+  color: #fff;
+}
+
+.doctor-cards-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0px 120px 0px 130px;
+}
+
+.doctor-card {
+  background-color: #129485;
+  text-align: center;
+  width: 230px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 20px;
+}
+.doctor-card:hover {
+  transform: scale(1.09);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.doctor-image {
+  width: 100%;
+  height: auto;
+}
+
+.doctor-card h3 {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.doctor-card p {
+  font-family: "Roboto", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.cat-sur {
+  color: #1e1e1e;
+  font-family: "Cormorant SC", Sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  padding-left: 130px;
+} */
+/* Reset and container styles */
+.list-doc {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.doc-nn {
+  color: #6ec1e4;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 110px;
+  padding-left: 130px;
+}
+.profile-banner h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Cormorant SC", Sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+/* Tabs container with media query */
+.tabs-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 130px;
+  /* margin-bottom: 20px; */
+  /* padding-top: 170px; */
+  flex-wrap: wrap; /* Allows tabs to wrap on smaller screens */
+}
+.tabs-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  /* padding: 10px 20px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd; */
+}
+.search-bar{
+  margin: 0px 160px 0px 0px;
+}
+.tab-button {
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background-color: #129485;
+  color: #fff;
+}
+
+/* Doctor cards container with responsive adjustments */
+.doctor-cards-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0px 120px 0px 130px;
+  cursor: pointer;
+  /* flex-direction: column; */
+}
+
+.doctor-card {
+  background-color: #129485;
+  text-align: center;
+  width: 230px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 20px;
+}
+
+.doctor-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-imageList {
+  width: 100%;
+  height: auto;
+}
+
+.doctor-card h3 {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-family: "Poppins", Sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.doctor-card p {
+  font-family: "Roboto", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.cat-sur {
+  color: #1e1e1e;
+  font-family: "Cormorant SC", Sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  padding-left: 130px;
+}
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-color: #71c176;
+}
+
+.floating-button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-button {
+  background-color: #ffa701 !important;
+  border: none !important;
+}
+
+.whatsapp-button {
+  background-color: #25d366 !important;
+  border: none !important;
+}
+
+
+@media (max-width: 768px) {
+  .tabs-container {
+    padding: 0px 20px 0px 20px;
+    flex-direction: row; /* Stack tabs vertically on smaller screens */
+  }
+
+  .tab-button {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .tabs-search-container {
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding-top: 20px; */
+  }
+  .search-bar {
+    width: 100%;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .cat-sur {
+    padding-left: 20px;
+    font-size: 30px; /* Slightly smaller font size */
+  }
+
+  .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+    width: 2rem;
+    height: 2rem;
+    color: #6b7280;
+    border: 0 none;
+    background: #eef2ff;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    margin: 0.5rem;
+}
+/* 
+  .doctor-cards-container {
+    padding: 0px 10px;
+  }
+
+  .doctor-card {
+    width: 100%;
+    margin-right: 0;
+  } */
+
+  .doctor-cards-container {
+    padding: 0px 20px; /* Adjust padding as needed */
+  }
+
+  .doctor-card {
+    width: calc(50% - 10px); /* Two cards per row, with margin adjustment */
+    margin-right: 10px; /* Adjust margin for better spacing */
+  }
+
+  .doctor-card:nth-child(2n) {
+    margin-right: 0; /* Remove margin on the second card in each row */
+  }
+  .doctor-card h3 {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .doctor-card p {
+    font-family: "Roboto", Sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+
+
+  .profile-banner {
+    position: absolute;
+    top: 43% !important;
+    right: 16% !important;
+    transform: translate(0%, -60%);
+    /* text-align: left; */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.profile-banner h1 {
+  font-size: 32px;
+  margin-top: 80px;
+}
+  .breadcrumbs1 {
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 37px;
+    margin-top: 0px;
+  }
+
+  .breadcrumbs a {
+    color: #555;
+    text-decoration: none;
+  }
+}
+
+/* @media (max-width: 480px) {
+  .doctor-card h3,
+  .doctor-card p {
+    font-size: 14px;
+  }
+
+  .cat-sur {
+    font-size: 24px;
+  }
+} */
